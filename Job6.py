@@ -6,6 +6,9 @@ class Animal:
     def vieillir(self):
         self.age += 1
 
+    def nommer(self, nom):
+        self.prenom = nom
+
 # Instanciation de l'animal
 animal = Animal()
 
@@ -17,3 +20,9 @@ animal.vieillir()
 
 # Affichage de l'âge après avoir vieilli
 print(f"L'age de l'animal {animal.age} ans")
+
+# Nommer l'animal
+animal.nommer("Luna")
+
+# Affichage du nom de l'animal
+print(f"L'animal se nomme {animal.prenom}")
